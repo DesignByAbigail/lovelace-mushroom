@@ -2,6 +2,7 @@ import { css } from "lit";
 
 export const themeVariables = css`
   --spacing: var(--mush-spacing, 10px);
+  --gap: var(--spacing);
 
   /* Title */
   --title-padding: var(--mush-title-padding, 24px 12px 8px);

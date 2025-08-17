@@ -117,6 +117,24 @@ const templateChipConfigStruct = object({
   entity_id: optional(union([string(), array(string())])),
 });
 
+const advancedChipConfigStruct = object({
+  type: literal("advanced"),
+  entity: optional(string()),
+  tap_action: optional(actionConfigStruct),
+  hold_action: optional(actionConfigStruct),
+  double_tap_action: optional(actionConfigStruct),
+  primary: optional(string()),
+  secondary: optional(string()),
+  max_width: optional(string()),
+  icon: optional(string()),
+  icon_color: optional(string()),
+  icon_background: optional(string()),
+  badge_icon: optional(string()),
+  badge_color: optional(string()),
+  picture: optional(string()),
+  entity_id: optional(union([string(), array(string())])),
+});
+
 const spacerChipConfigStruct = object({
   type: literal("spacer"),
 });
@@ -142,6 +160,8 @@ const chipsConfigStruct = dynamic<any>((value) => {
         return lightChipConfigStruct;
       case "template":
         return templateChipConfigStruct;
+      case "advanced":
+        return advancedChipConfigStruct;
       case "spacer":
         return spacerChipConfigStruct;
     }

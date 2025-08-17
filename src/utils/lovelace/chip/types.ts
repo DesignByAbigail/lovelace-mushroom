@@ -87,6 +87,24 @@ export type TemplateChipConfig = {
   entity_id?: string | string[];
 };
 
+export type AdvancedChipConfig = {
+  type: "advanced";
+  entity?: string;
+  hold_action?: ActionConfig;
+  tap_action?: ActionConfig;
+  double_tap_action?: ActionConfig;
+  primary?: string;
+  secondary?: string;
+  max_width?: string;
+  icon?: string;
+  icon_color?: string;
+  icon_background?: string;
+  badge_icon?: string;
+  badge_color?: string;
+  picture?: string;
+  entity_id?: string | string[];
+};
+
 export interface ConditionalChipConfig {
   type: "conditional";
   chip?: LovelaceChipConfig;
@@ -118,6 +136,7 @@ export type LovelaceChipConfig =
   | QuickBarChipConfig
   | WeatherChipConfig
   | TemplateChipConfig
+  | AdvancedChipConfig
   | ConditionalChipConfig
   | LightChipConfig
   | SpacerChipConfig;
@@ -133,5 +152,6 @@ export const CHIP_LIST: LovelaceChipConfig["type"][] = [
   "quickbar",
   "spacer",
   "template",
+  "advanced",
   "weather",
 ];

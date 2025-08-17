@@ -57,7 +57,7 @@ export class StateItem extends LitElement {
         justify-content: center;
         box-sizing: border-box;
         padding: var(--spacing);
-        gap: var(--spacing);
+        gap: var(--gap);
       }
       .icon {
         position: relative;

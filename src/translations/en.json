@@ -35,6 +35,8 @@
         "layout": "Layout",
         "primary_info": "Primary information",
         "secondary_info": "Secondary information",
+        "max_width": "Maximum width of text",
+        "icon_background": "Icon background opacity",
         "use_entity_picture": "Use entity picture?"
       },
       "humidifier": {
@@ -89,7 +91,9 @@
         "multiline_secondary": "Multiline secondary?",
         "picture": "Picture (will replace the icon)",
         "primary": "Primary information",
-        "secondary": "Secondary information"
+        "secondary": "Secondary information",
+        "max_width": "Maximum width of text",
+        "icon_background": "Icon background opacity"
       },
       "title": {
         "subtitle": "Subtitle",
@@ -129,6 +133,7 @@
           "quickbar": "Quickbar",
           "spacer": "Spacer",
           "template": "Template",
+          "advanced": "Advanced",
           "weather": "Weather"
         }
       },

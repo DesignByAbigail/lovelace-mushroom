@@ -5,6 +5,7 @@ import "./action-chip";
 import "./menu-chip";
 import "./quickbar-chip";
 import "./template-chip";
+import "./advanced-chip";
 import "./conditional-chip";
 import "./light-chip";
 import "./alarm-control-panel-chip";
